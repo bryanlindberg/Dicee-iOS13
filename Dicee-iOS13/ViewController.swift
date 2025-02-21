@@ -55,8 +55,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func maxRollButtonPressed(_ sender: UIButton) {
+        let maxRollScore = 12
         diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
         diceImageView2.image = #imageLiteral(resourceName: "DiceSix")
+        scoreLabel.text = "Your score: \(maxRollScore)"
+        
     }
     
     @IBAction func switcharooButtonPressed(_ sender: UIButton) {
